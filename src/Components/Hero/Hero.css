@@ -98,6 +98,14 @@ video {
     cursor: pointer;
 }
 
+.hero-connect:hover{
+    border: 2px solid white;
+}
+
+.hero-resume:hover{
+    border-color: #d159e9;
+}
+
 
 
 

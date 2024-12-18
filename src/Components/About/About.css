@@ -1,0 +1,44 @@
+.about-section {
+    display: flex;
+    padding: 0 13vw;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 12px; 
+    justify-content: center;
+    gap: 6vw;
+ 
+ 
+  }
+ h2{
+    text-align: center;
+    font-size: 3rem; /* Increased font size */
+    margin-top: 42px;
+    margin-bottom: 30px;
+  }
+  .about-text {
+    flex: 1;
+    padding-right: 80px;
+  }
+  
+  
+  
+  .about-text p {
+    font-size: 20px;
+
+    line-height: 1.8;
+    margin-bottom: 20px; /* Added spacing between paragraphs */
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+
+    height: 40vh;
+    border-radius: 8px;
+  }
+  
