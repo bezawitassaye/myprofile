@@ -1,0 +1,248 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    text-align: center;
+    gap: 2vw;
+    padding: 0 10vw;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Places video behind text */
+}
+
+.video-container h1 {
+    position: relative;
+    z-index: 1; /* Ensure text is on top of the video */
+    font-size: 60px;
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.video-container h1 span {
+    display: inline-block;
+    animation: animate 1.5s linear forwards;
+    position: relative; /* Change from absolute to relative */
+    opacity: 0; /* Ensure they start as invisible */
+}
+
+video {
+    object-fit: cover;
+}
+
+.first {
+    margin-right: 8px;
+}
+
+.last {
+    margin-left: 18px;
+}
+
+
+.scroll,
+.hero-action {
+    z-index: 1;
+    position: relative;
+    margin-top: -135px;
+}
+
+
+
+/* Blinking cursor effect */
+
+.hero-act{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-top: 12px;
+  
+    position: relative;
+    margin-top: 25px;
+}
+
+.hero-connect{
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%);
+    cursor: pointer;
+}
+
+.hero-resume{
+    padding: 15px 45px;
+    border-radius: 50px;
+    border: 2px solid #fff ;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animated-text{
+    font-size: 44px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Full Stack developer";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+.animated-text span::before {
+    content: "Full Stack developer"; /* Set the text to appear */
+    color: transparent; /* Make the original text color transparent */
+    background: linear-gradient(to right, #DA7C25 0.36%, #B923E1 102.06%); /* Apply gradient */
+    -webkit-background-clip: text; /* This ensures the gradient clips to the text */
+    background-clip: text; /* Standard version */
+}
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid ;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Full-Stack developer";
+    }
+    21%,40%{
+        content: "automated Q/A tester";
+    }
+    41%,60%{
+        content: "website designer";
+    }
+    61%,80%{
+        content: "gaphics designer";
+    }
+    81%,100%{
+        content: "mobile developer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+/* Adding delays for each child span */
+.video-container h1 span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.video-container h1 span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.video-container h1 span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.video-container h1 span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.video-container h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+.video-container h1 span:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.video-container h1 span:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.video-container h1 span:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.video-container h1 span:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.video-container h1 span:nth-child(10) {
+    animation-delay: 2s;
+}
+.video-container h1 span:nth-child(11) {
+    animation-delay: 2.2s;
+}
+.video-container h1 span:nth-child(12) {
+    animation-delay: 2.4s;
+}
+.video-container h1 span:nth-child(13) {
+    animation-delay: 2.6s;
+}
+.video-container h1 span:nth-child(14) {
+    animation-delay: 2.8s;
+}
+.video-container h1 span:nth-child(15) {
+    animation-delay: 3s;
+}
