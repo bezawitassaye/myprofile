@@ -209,48 +209,48 @@ video {
 }
 
 /* Adding delays for each child span */
-.video-container h1 span:nth-child(1) {
+ h1 span:nth-child(1) {
     animation-delay: 0.2s;
 }
-.video-container h1 span:nth-child(2) {
+ h1 span:nth-child(2) {
     animation-delay: 0.4s;
 }
-.video-container h1 span:nth-child(3) {
+ h1 span:nth-child(3) {
     animation-delay: 0.6s;
 }
-.video-container h1 span:nth-child(4) {
+ h1 span:nth-child(4) {
     animation-delay: 0.8s;
 }
-.video-container h1 span:nth-child(5) {
+ h1 span:nth-child(5) {
     animation-delay: 1s;
 }
-.video-container h1 span:nth-child(6) {
+ h1 span:nth-child(6) {
     animation-delay: 1.2s;
 }
-.video-container h1 span:nth-child(7) {
+ h1 span:nth-child(7) {
     animation-delay: 1.4s;
 }
-.video-container h1 span:nth-child(8) {
+ h1 span:nth-child(8) {
     animation-delay: 1.6s;
 }
-.video-container h1 span:nth-child(9) {
+ h1 span:nth-child(9) {
     animation-delay: 1.8s;
 }
-.video-container h1 span:nth-child(10) {
+ h1 span:nth-child(10) {
     animation-delay: 2s;
 }
-.video-container h1 span:nth-child(11) {
+ h1 span:nth-child(11) {
     animation-delay: 2.2s;
 }
-.video-container h1 span:nth-child(12) {
+ h1 span:nth-child(12) {
     animation-delay: 2.4s;
 }
-.video-container h1 span:nth-child(13) {
+ h1 span:nth-child(13) {
     animation-delay: 2.6s;
 }
-.video-container h1 span:nth-child(14) {
+ h1 span:nth-child(14) {
     animation-delay: 2.8s;
 }
-.video-container h1 span:nth-child(15) {
+ h1 span:nth-child(15) {
     animation-delay: 3s;
 }

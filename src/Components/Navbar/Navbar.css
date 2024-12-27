@@ -27,3 +27,22 @@
 .navbar img{
     width: 100px;
 }
+
+.nav-menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* Adjust this to your desired default color */
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .nav-menu li:hover {
+    color: #c627ee; /* Glow color */
+    text-shadow: 0 0 15px #c627ee, 0 0 25px #c627ee, 0 0 35px #c627ee;
+  }
+  

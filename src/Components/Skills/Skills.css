@@ -1,0 +1,169 @@
+.circular-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none; /* Removed background for focus on the circle */
+}
+
+/* Glow effect directly on the circle */
+circle {
+  stroke: url(#GradientColor); /* Ensure this matches the gradient definition */
+  stroke-width: 10;
+  fill: none;
+  filter: drop-shadow(0 0 10px rgba(185, 35, 225, 0.8)) drop-shadow(0 0 10px rgba(185, 35, 225, 1));
+  transition: filter 0.3s ease-in-out; /* Smooth transition for dynamic glow */
+}
+.circular-progress::before {
+  content: '';
+  position: absolute;
+  width: 90%; /* Adjust this value to control the size of the inner circle */
+  height: 90%;
+  background-color: #fff; /* White background inside the circle */
+  border-radius: 50%;
+}
+
+
+
+.counter {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.sk-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+
+/* ==================== Circular Progress Bar Wrapper ============================ */
+.skilll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.outer-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inner-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* ==================== Linear Progress Bar ============================ */
+.skill {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+
+.progress-bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 20px; /* Increased height for the progress bar */
+  width: 400px; /* You can also use a fixed width (e.g., 400px) if desired */
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.progress-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   /* Gray background for the progress bar */
+  border-radius: 10px;
+}
+
+.progress {
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(267deg, #B923E1 0.36%, #B923E1 102.06%);
+  transition: width 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(185, 35, 225, 0.8), 0 0 20px rgba(185, 35, 225, 0.8); /* Glow effect */
+}
+
+.progress-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff; /* White color for the percentage text */
+}
+
+/* ==================== Main Section ============================ */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skillBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-text {
+  text-align: center;
+  padding-top: 160px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.skill-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6vw;
+  text-align: center;
+  margin-top: 52px;
+}
+
+/* ==================== Layout for Columns ============================ */
+.professional-skills,
+.circular-skills-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.professional-skills h3,
+.circular-skills-wrap h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.circular-bar-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for the circular progress bars */
+  gap: 20px;
+  width: 100%;
+}
