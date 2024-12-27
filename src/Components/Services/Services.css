@@ -1,0 +1,113 @@
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-title img {
+    margin-top: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Spacing between cards */
+    justify-items: center;
+    width: 80%;
+    padding: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 210px auto;
+    grid-template-areas: 
+        "image"
+        "text";
+    background: rgb(15, 15, 15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    border-radius: 18px;
+    overflow: hidden;
+    width: 300px;
+    height: 450px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    background-clip: content-box;
+    border: 3px solid transparent; /* Start with no visible border */
+    transition: transform 0.3s ease;
+}
+
+/* Gradient border applied only to the card */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    background: linear-gradient(45deg, #DF8908 10%, #4e56a6, #2b6c6f, #B415FF 100%, #ff8a00);
+    background-size: 400% 400%;
+    animation: gradient-border 8s linear infinite; /* Slower speed for the animation */
+    border-radius: 18px;
+}
+
+/* Remove the internal gradient and set the card image area */
+.card-image {
+    grid-area: image;
+    height: 210px;
+    background-color: #444; /* Placeholder for image */
+}
+
+.card-text {
+    grid-area: text;
+    padding: 1rem;
+    color: white;
+    margin-top: 40px;
+}
+
+.card-text h2 {
+    font-size: 32px;
+    padding: 6px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.card-image img {
+    width: 300px;
+    height: 213px;
+    margin-top: -3px;
+}
+
+/* Hover effect on the card to create a subtle zoom-in effect */
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Keyframes for running gradient border */
+@keyframes gradient-border {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 400%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
