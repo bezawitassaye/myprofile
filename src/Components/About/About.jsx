@@ -1,14 +1,18 @@
 import React from 'react';
 import './About.css';
 import assets from '../../assets/assets';
-
+import theme_pattern from '../../assets/theme_pattern.svg'
 const About = () => {
   return (
     <>
-    <div>
-    <h2>About Me</h2>
-
+  
+    <div className='contact-title'>
+                
+                <h1>About Me</h1>
+                <img src={theme_pattern} alt="" />
     </div>
+
+   
     <div className="about-section">
         <div className="about-image">
         <img src={assets.fliped} alt="About Me" />

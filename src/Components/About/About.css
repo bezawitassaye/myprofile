@@ -9,12 +9,7 @@
  
  
   }
- h2{
-    text-align: center;
-    font-size: 3rem; /* Increased font size */
-   
-    margin-bottom: 30px;
-  }
+
   .about-text {
     flex: 1;
     padding-right: 80px;
@@ -42,3 +37,23 @@
     border-radius: 8px;
   }
   
+  .contact-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 85px;
+  }
+  
+  .contact-title img {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half the width and height */
+     /* Adjust size if needed */
+    height: auto;
+  }
+  
+
+
+ 
