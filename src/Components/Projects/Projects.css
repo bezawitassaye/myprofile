@@ -1,0 +1,89 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 130px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+    margin-top: 52px;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    border-radius: 46px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card h2{
+    font-size:33px;
+    
+    background: linear-gradient(270deg,#DF8908 30%,#B415FF 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bc8add;
+  }
+  
+  .project-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .project-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .project-details button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-details button:hover {
+    background-color: #0056b3;
+  }
+
+  .projects-details-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+
+  }
+  
