@@ -42,7 +42,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid #bc8add;
   }
+
   
+.project-card.active {
+  border-color: #bc8add; /* Adjust the color as needed */
+  background-color: rgba(0, 255, 255, 0.1); /* Optional for a highlighted effect */
+}
+
   .project-details {
     position: fixed;
     top: 50%;
@@ -76,14 +82,29 @@
     background-color: #0056b3;
   }
 
-  .projects-details-container{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  .projects-details-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 500px); /* Creates exactly 3 columns with a fixed 500px width */
+    gap: 30px; /* Adds space between the grid items */
+    padding: 20px; /* Adds some padding around the container */
+     /* Combines margin-left and margin-right */
+    width: 100%; /* Ensures the container takes up full available width */
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 80px;
+    margin-top: 30px; /* Centers the grid */
+}
 
-  }
-  
+.projects-details-container img {
+    width: 100%; /* Ensures images scale within their grid cell */
+    height: 290px; /* Maintain the fixed height */
+    object-fit: cover;
+    border-radius: 30px; /* Ensures the image fills its dimensions without distortion */
+}
+
+.project-details-card {
+    width: 100%; /* Ensure the card adapts to the grid cell */
+    max-width: 490px; /* Optional: Constrain the card size */
+}
+
+
+
+
