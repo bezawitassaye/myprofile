@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
   
-    <div className='contact-title'>
+    <div id="about" className='contact-title'>
                 
                 <h1>About Me</h1>
                 <img src={theme_pattern} alt="" />

@@ -1,22 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Skills.css';
 
-const CircularProgress = ({ target, title }) => {
+const CircularProgress = ({ target, title, isVisible }) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        let start = 0;
-        const interval = setInterval(() => {
-            start += 1;
-            if (start > target) {
-                clearInterval(interval);
-            } else {
-                setProgress(start);
-            }
-        }, 12); // Adjust speed by changing interval time
+        if (isVisible) {
+            setProgress(0); // Reset progress
+            let start = 0;
+            const interval = setInterval(() => {
+                start += 1;
+                if (start > target) {
+                    clearInterval(interval);
+                } else {
+                    setProgress(start);
+                }
+            }, 12); // Adjust speed by changing interval time
 
-        return () => clearInterval(interval);
-    }, [target]);
+            return () => clearInterval(interval);
+        }
+    }, [target, isVisible]);
 
     const strokeValue = 465 - (465 * progress) / 100;
 
@@ -51,39 +54,66 @@ const CircularProgress = ({ target, title }) => {
     );
 };
 
-const ProgressBar = ({ target, title }) => {
+const ProgressBar = ({ target, title, isVisible }) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        let start = 0;
-        const interval = setInterval(() => {
-            start += 1;
-            if (start > target) {
-                clearInterval(interval);
-            } else {
-                setProgress(start);
-            }
-        }, 12); // Adjust speed by changing interval time
+        if (isVisible) {
+            setProgress(0); // Reset progress
+            let start = 0;
+            const interval = setInterval(() => {
+                start += 1;
+                if (start > target) {
+                    clearInterval(interval);
+                } else {
+                    setProgress(start);
+                }
+            }, 12); // Adjust speed by changing interval time
 
-        return () => clearInterval(interval);
-    }, [target]);
+            return () => clearInterval(interval);
+        }
+    }, [target, isVisible]);
 
     return (
-      <div className="skill">
-      
-      <div className="progress-bar">
-          <div className="progress-background"></div>  {/* Background for the linear progress bar */}
-          <div className="progress" style={{ width: `${progress}%` }}>
-              <span className="progress-percentage">{progress}%</span>  {/* Percentage inside the progress bar */}
-          </div>
-      </div>
-      <div className="sk-title">{title}</div>
-  </div>
-  
+        <div className="skill">
+            <div className="progress-bar">
+                <div className="progress-background"></div>
+                <div className="progress" style={{ width: `${progress}%` }}>
+                    <span className="progress-percentage">{progress}%</span>
+                </div>
+            </div>
+            <div className="sk-title">{title}</div>
+        </div>
     );
 };
 
 const Skills = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const skillsRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false); // Optionally reset when scrolling out of view
+                }
+            },
+            { threshold: 0.3 } // Trigger when 30% of the section is visible
+        );
+
+        if (skillsRef.current) {
+            observer.observe(skillsRef.current);
+        }
+
+        return () => {
+            if (skillsRef.current) {
+                observer.unobserve(skillsRef.current);
+            }
+        };
+    }, []);
+
     const technicalSkills = [
         { title: 'HTML', target: 89 },
         { title: 'CSS', target: 89 },
@@ -97,39 +127,46 @@ const Skills = () => {
     ];
 
     const professionalSkills = [
-       { title: 'Team Work', target: 85 },
+        { title: 'Team Work', target: 85 },
         { title: 'Communication', target: 75 },
         { title: 'Problem Solving', target: 80 },
-       
-        { title: 'Project  Management', target: 67 },
-        { title: 'Creativity ', target: 74 },
+        { title: 'Project Management', target: 67 },
+        { title: 'Creativity', target: 74 },
     ];
 
     return (
-        <div className="skills">
+        <div className="skills" ref={skillsRef}>
             <div className="container">
                 <div className="skillBox">
-                    <div className="main-text">
+                    <div id='skills' className="main-text">
                         <h2 className="heading">My Skills</h2>
                     </div>
                     <div className="skill-wrap">
-                        {/* Professional Skills Column */}
-                        
-
-                        {/* Technical Skills Column (Circular Progress Bars) */}
+                        {/* Technical Skills */}
                         <div className="circular-skills-wrap">
                             <h3>Technical Skills</h3>
                             <div className="circular-bar-container">
                                 {technicalSkills.map((skill, index) => (
-                                    <CircularProgress key={index} target={skill.target} title={skill.title} />
+                                    <CircularProgress
+                                        key={index}
+                                        target={skill.target}
+                                        title={skill.title}
+                                        isVisible={isVisible}
+                                    />
                                 ))}
                             </div>
                         </div>
 
+                        {/* Professional Skills */}
                         <div className="professional-skills">
                             <h3>Professional Skills</h3>
                             {professionalSkills.map((skill, index) => (
-                                <ProgressBar key={index} target={skill.target} title={skill.title} />
+                                <ProgressBar
+                                    key={index}
+                                    target={skill.target}
+                                    title={skill.title}
+                                    isVisible={isVisible}
+                                />
                             ))}
                         </div>
                     </div>

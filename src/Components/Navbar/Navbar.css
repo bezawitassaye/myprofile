@@ -1,40 +1,46 @@
-.navbar{
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px 160px;
-}
-
-.nav-menu{
+  }
+  
+  .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 60px;
     font-size: 20px;
-}
-
-.nav-connect{
+  }
+  
+  .nav-connect {
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%);
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
-}
-.nav-connect:hover{
+  }
+  
+  .nav-connect:hover {
     transform: scale(1.05);
-}
-.navbar img{
+  }
+  
+  .navbar img {
     width: 100px;
-}
-
-.nav-menu li {
+  }
+  
+  .nav-menu li {
     list-style: none;
     display: inline-block;
     margin: 0 15px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff; /* Adjust this to your desired default color */
+    color: #ffffff;
     position: relative;
     text-decoration: none;
     cursor: pointer;
@@ -44,5 +50,14 @@
   .nav-menu li:hover {
     color: #c627ee; /* Glow color */
     text-shadow: 0 0 15px #c627ee, 0 0 25px #c627ee, 0 0 35px #c627ee;
+  }
+  
+  .nav-menu li a {
+    color: inherit;
+    text-decoration: none; /* Prevent the default link underline */
+  }
+  
+  .nav-menu li a:hover {
+    text-decoration: underline;
   }
   
