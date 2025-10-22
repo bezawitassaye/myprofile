@@ -15,6 +15,7 @@ import doctors from "../../assets/doctors.png";
 import blog from "../../assets/blog.webp";
 import chat from "../../assets/chat ai.png";
 import Cover from "../../assets/Cover.png";
+import dashboard from "../../assets/dashboard.webp";
 
 
 const projectCategories = [
@@ -47,11 +48,11 @@ const projectDetails = [
 
   {
     id: 'uiux',
-    title: ' Modern Food Ordering App UI/UX Design ',
-    description: 'I designed a modern food ordering app with a clean, engaging UI/UX. The app includes onboarding, login options, menu browsing, cart management, checkout, and multiple payment methods. Built with high-fidelity, responsive screens and smooth user flow, it ensures a seamless ordering experience. ',
-    image: food_uiux,
+    title: ' Modern Dark-Themed Banking Dashboard UI/UX Design ',
+    description: 'A modern dark-themed banking dashboard with a clean and intuitive layout.Visual elements like income vs. outcome charts and transaction history enhance user insight.Quick access to transfers, bills, and card management ensures a seamless experience.',
+    image: dashboard,
     tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
-    viewLink: 'https://www.figma.com/design/br76NUJwMhygf7YCX4qnIM/Food-ordering-app?t=2dT8wTcVrNKOvctk-0',
+    viewLink: 'https://www.figma.com/design/Rd5q5mQH76OOfvXp9LPomL/Modern-Dark-Themed-Banking-Dashboard?t=DU2jNYPwutcs8CP6-0',
 
   },
 
@@ -83,7 +84,17 @@ const projectDetails = [
     viewLink: 'https://www.figma.com/design/RrcnH9jVVvzDZolXsBgyUd/Spotify-Redesign---Free-Ui-Kit--Light---Community-?node-id=102-398&p=f&t=Wke33EHpxeQNZttc-0',
 
   },
+  
 
+   {
+    id: 'uiux',
+    title: ' Modern Food Ordering App UI/UX Design ',
+    description: 'I designed a modern food ordering app with a clean, engaging UI/UX. The app includes onboarding, login options, menu browsing, cart management, checkout, and multiple payment methods. Built with high-fidelity, responsive screens and smooth user flow, it ensures a seamless ordering experience. ',
+    image: food_uiux,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/br76NUJwMhygf7YCX4qnIM/Food-ordering-app?t=2dT8wTcVrNKOvctk-0',
+
+  },
   {
     id: 'uiux',
     title: ' Modern Gym & Fitness App UI/UX Design  ',
