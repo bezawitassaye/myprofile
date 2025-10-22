@@ -16,6 +16,7 @@ import blog from "../../assets/blog.webp";
 import chat from "../../assets/chat ai.png";
 import Cover from "../../assets/Cover.png";
 import dashboard from "../../assets/dashboard.webp";
+import web from "../../assets/web.webp";
 
 
 const projectCategories = [
@@ -34,7 +35,18 @@ const projectDetails = [
     tags: ['Next.js', 'Express.js', 'MongoDB', 'Node.js'],
     viewLink: 'https://booking-movies-jade.vercel.app/movies',
     codeLink: 'https://github.com/bezawitassaye/movie_booking',
-  }, {
+  }, 
+   {
+    id: 'uiux',
+    title: ' Home Furnishing eCommerce or Home & Living Store UI/UX Design ',
+    description: 'A clean and elegant UI/UX design tailored for home furnishing eCommerce.Showcases products like sofas, decor, and furniture with high visual appeal.Focused on smooth navigation, filters, and a seamless shopping experience.',
+    image: web,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/qCjYRMNSsaesx31Fkkuadu/Home-Furnishing-eCommerce-or-Home---Living-Store?t=DU2jNYPwutcs8CP6-0',
+
+  },
+
+  {
     id: 'mobile',
     title: 'Real Estate Mobile Application',
     description:
