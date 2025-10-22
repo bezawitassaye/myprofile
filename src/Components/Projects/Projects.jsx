@@ -17,6 +17,8 @@ import chat from "../../assets/chat ai.png";
 import Cover from "../../assets/Cover.png";
 import dashboard from "../../assets/dashboard.webp";
 import web from "../../assets/web.webp";
+import web3 from "../../assets/web3.webp";
+
 
 
 const projectCategories = [
@@ -45,6 +47,16 @@ const projectDetails = [
     viewLink: 'https://www.figma.com/design/qCjYRMNSsaesx31Fkkuadu/Home-Furnishing-eCommerce-or-Home---Living-Store?t=DU2jNYPwutcs8CP6-0',
 
   },
+  {
+    id: 'uiux',
+    title: ' Creative Agency Website Concept –  UI Design',
+    description: 'This vibrant website design combines bold typography and layered 3D scroll effects to captivate users.Perfect for creative or digital agencies, it tells a brand story through interactive visuals and playful animations.Custom characters and immersive scrolling create a memorable, next-gen user experience.',
+    image: web3,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/yKlu0KsVs7NjYeaxVkjKhb/Creative-Agency-Website-Concept-%E2%80%93--UI-Design?t=DU2jNYPwutcs8CP6-0',
+
+  },
+
 
   {
     id: 'mobile',
