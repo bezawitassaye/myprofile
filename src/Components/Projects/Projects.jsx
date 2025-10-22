@@ -18,7 +18,9 @@ import Cover from "../../assets/Cover.png";
 import dashboard from "../../assets/dashboard.webp";
 import web from "../../assets/web.webp";
 import web3 from "../../assets/web3.webp";
+import web2 from "../../assets/web2.webp";
 
+import realstate2 from "../../assets/reals.webp";
 
 
 const projectCategories = [
@@ -56,6 +58,17 @@ const projectDetails = [
     viewLink: 'https://www.figma.com/design/yKlu0KsVs7NjYeaxVkjKhb/Creative-Agency-Website-Concept-%E2%80%93--UI-Design?t=DU2jNYPwutcs8CP6-0',
 
   },
+
+  {
+    id: 'uiux',
+    title: ' Lawfirm - Expert Legal Support Website',
+    description: 'This is a professional and modern website homepage design for a law firm. The layout emphasizes trust, expertise, and client success, using a combination of dark blue and white with gold accents to convey a sense of authority and reliability..',
+    image: web2,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/Ygx9JYnJrnP9AUVw6Hy8mC/Lawfirm---Expert-Legal-Support-Website?t=DU2jNYPwutcs8CP6-0',
+
+  },
+
 
 
   {
@@ -117,6 +130,15 @@ const projectDetails = [
     image: food_uiux,
     tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
     viewLink: 'https://www.figma.com/design/br76NUJwMhygf7YCX4qnIM/Food-ordering-app?t=2dT8wTcVrNKOvctk-0',
+
+  },
+  {
+    id: 'uiux',
+    title: ' Modern Realstate App UI/UX Design  ',
+    description: 'I designed a real estate mobile app with a clean and motivating UI/UX. The app includes property listings, search functionality, virtual tours, and user profiles. Built with high-fidelity, responsive screens and smooth navigation, it ensures users stay engaged and on track with their property search. Designed in Figma, focusing on usability and modern aesthetics.. ',
+    image: realstate2,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/0A1yJs4fP8W9FFPkTrFswl/Real-state-app?t=vllu7z86IsOr5qwW-0',
 
   },
   {
