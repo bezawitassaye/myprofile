@@ -13,6 +13,8 @@ import jym from "../../assets/jym.jpeg";
 import movieapp from "../../assets/movieapp.png";
 import doctors from "../../assets/doctors.png";
 import blog from "../../assets/blog.webp";
+import chat from "../../assets/chat ai.png";
+import Cover from "../../assets/Cover.png";
 
 
 const projectCategories = [
@@ -64,6 +66,24 @@ const projectDetails = [
     viewLink: 'https://eccomerce-onr6.onrender.com/',
     codeLink: 'https://github.com/bezawitassaye/eccomerce',
   },
+   {
+    id: 'uiux',
+    title: 'Multi-language Chat Application UI/UX Design  ',
+    description: 'emasa AI is a modern chat application UI kit designed for seamless multilingual communication. Built in Figma, it features 60 light-mode screens with intuitive, clean, and user-friendly interfaces. Perfect for developers and designers building AI-powered or community chat apps with localization support.',
+    image: chat,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/x3zKIDZuVMMdJc2ykTcYCr/yemasa-ai?node-id=0-1&p=f&t=M523l9IRvc2Ldl51-0',
+  },
+  {
+    id: 'uiux',
+    title: ' Spotify Mobile App Redesign UI/UX Design  ',
+    description: 'Spotify is a leading music streaming app that offers millions of songs, podcasts, and playlists on demand.a sleek, personalized interface, users can discover, stream, and share music across all devices.It’s the go-to platform for music lovers seeking both mainstream hits and niche genres worldwide. ',
+    image: Cover,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/RrcnH9jVVvzDZolXsBgyUd/Spotify-Redesign---Free-Ui-Kit--Light---Community-?node-id=102-398&p=f&t=Wke33EHpxeQNZttc-0',
+
+  },
+
   {
     id: 'uiux',
     title: ' Modern Gym & Fitness App UI/UX Design  ',
@@ -74,15 +94,7 @@ const projectDetails = [
 
   },
 
-  {
-    id: 'uiux',
-    title: ' Modern Doctors Appointment App UI/UX Design  ',
-    description: 'I designed a doctors appointment mobile app with a clean and motivating UI/UX. The app includes doctor profiles, appointment scheduling, patient management, and telemedicine features. Built with high-fidelity, responsive screens and smooth navigation, it ensures users stay engaged and on track with their health goals. Designed in Figma, focusing on usability and modern aesthetics.. ',
-    image: doctors,
-    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
-    viewLink: 'https://www.figma.com/design/9JZP5kvS97lBsWXZiicipU/Doctors?node-id=64-609&t=2dT8wTcVrNKOvctk-0',
-
-  },
+ 
 
 
 {
@@ -95,14 +107,14 @@ const projectDetails = [
     codeLink: 'https://github.com/bezawitassaye/spotify_flutter',
   },
 
-  {
-    id: 'mobile',
-    title: 'A Movie Finding App with Extensive Search',
-    description: 'Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app leverages modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.',
-    image: movieapp,
-    tags: ['React Native', 'Expo', 'Tailwind CSS', 'Appwrite', 'TypeScript', 'Redux Toolkit'],
+   {
+    id: 'uiux',
+    title: ' Modern Doctors Appointment App UI/UX Design  ',
+    description: 'I designed a doctors appointment mobile app with a clean and motivating UI/UX. The app includes doctor profiles, appointment scheduling, patient management, and telemedicine features. Built with high-fidelity, responsive screens and smooth navigation, it ensures users stay engaged and on track with their health goals. Designed in Figma, focusing on usability and modern aesthetics.. ',
+    image: doctors,
+    tags: ['Figma', 'User Interface', 'User Experience', 'Mobile Design'],
+    viewLink: 'https://www.figma.com/design/9JZP5kvS97lBsWXZiicipU/Doctors?node-id=64-609&t=2dT8wTcVrNKOvctk-0',
 
-    codeLink: 'https://github.com/bezawitassaye/movie-app',
   },
   {
     id: 'web',
@@ -121,6 +133,15 @@ const projectDetails = [
     tags: ['Next Js', 'Node.js', 'Tailwind CSS', 'Express.js', 'Redux Toolkit'],
     viewLink: 'https://myprofile-ek46.onrender.com/',
     codeLink: 'https://github.com/bezawitassaye/myprofile',
+  },
+  {
+    id: 'mobile',
+    title: 'A Movie Finding App with Extensive Search',
+    description: 'Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app leverages modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.',
+    image: movieapp,
+    tags: ['React Native', 'Expo', 'Tailwind CSS', 'Appwrite', 'TypeScript', 'Redux Toolkit'],
+
+    codeLink: 'https://github.com/bezawitassaye/movie-app',
   },
 
   {
